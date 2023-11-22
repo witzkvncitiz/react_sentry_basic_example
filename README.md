@@ -1,30 +1,29 @@
-# React + TypeScript + Vite
+# React Sentry SETUP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Accueil de Sentry](https://sentry.io/welcome/)
+[Sandbox de démo Sentry](https://try.sentry-demo.com/organizations/feasible-stork/issues)
 
-Currently, two official plugins are available:
+## Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Mise en place sur un projet React JS](https://docs.sentry.io/platforms/javascript/guides/react/?original_referrer=https%3A%2F%2Fsentry.io%2F)
 
-## Expanding the ESLint configuration
+- Installation de Sentry
+- Setup Error Boundary
+- Setup React Router
+- Setup sur Redux
+- Utilisation du wizard pour les sourcemaps et avec des stack traces lisibles
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Configuration
 
-- Configure the top-level `parserOptions` property like this:
+- Se créer un compte Sentry
+- Sur ce compte on dispose de 14 jours d'essai gratuit, possible de self-host pour éviter de payer
+- Depuis mon compte, j'ai accès à la configuration depuis l'onglet "Projects". Il suffit de copier cette configuration et la mettre dans le projet.
+- Voir la [doc officielle en ligne](https://docs.sentry.io/platforms/javascript/guides/react/configuration/) pour affiner la configuration
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Self-host
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+[Guide du self-hosting](https://develop.sentry.dev/self-hosted/)
+
+## Prix
+
+[Les prix](https://sentry.io/pricing/)
